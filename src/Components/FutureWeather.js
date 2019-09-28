@@ -14,9 +14,9 @@ class FutureWeather extends Component{
 
   render(){
     //let defaultValue = this.props.defaultValue || {};
-    return(
-      <React.Fragment>
-        <div className="next1Day rowElements">
+    return(      
+      <ul className="futureWeather rowElements">
+        <li className="next1Day rowElements">
           <div className="nextDayCaption">
             MON
           </div>
@@ -29,9 +29,9 @@ class FutureWeather extends Component{
           <div className="next1DayCondition">
             RAINING
           </div>              
-        </div>
+        </li>
 
-        <div className="next1Day rowElements">
+        <li className="next1Day rowElements">
           <div className="nextDayCaption">
             TUE
           </div>
@@ -44,9 +44,9 @@ class FutureWeather extends Component{
           <div className="next1DayCondition">
             RAINING
           </div>
-        </div>   
+        </li>   
 
-        <div className="next1Day rowElements">
+        <li className="next1Day rowElements">
           <div className="nextDayCaption">
             WED
           </div>
@@ -59,9 +59,9 @@ class FutureWeather extends Component{
           <div className="next1DayCondition">
             RAINING
           </div>
-        </div>   
+        </li>   
           
-        <div className="next1Day rowElements">
+        <li className="next1Day rowElements">
           <div className="nextDayCaption">
             THU
           </div>
@@ -74,9 +74,9 @@ class FutureWeather extends Component{
           <div className="next1DayCondition">
             RAINING
           </div>
-        </div>   
+        </li>   
           
-        <div className="next1Day rowElements">
+        <li className="next1Day rowElements">
           <div className="nextDayCaption">
             FRI
           </div>
@@ -89,8 +89,8 @@ class FutureWeather extends Component{
           <div className="next1DayCondition">
             WINDY
           </div>
-        </div>          
-      </React.Fragment>
+        </li>          
+      </ul>
     )
   }
 }

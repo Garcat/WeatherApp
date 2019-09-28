@@ -1,87 +1,53 @@
 import React from 'react';
 
+import BackButton from './Components/Buttons/BackButton';
+import City from './Components/City';
 import CurrentWeather from './Components/CurrentWeather';
 import FutureWeather from './Components/FutureWeather';
 import TwitterFeed from './Components/TwitterFeed';
 
-import twitterIcon from './image/Twitter-icon.png';
 import './App.css';
 
 import { FontAwesomeIcon }from '@fortawesome/react-fontawesome'
-import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
   return (
-    <div className="App">
-      <div className="page">
-        <div className="head">
-          =
+    <div className="container">
+      <header>
+        <FontAwesomeIcon icon={faBars} />
+      </header>
+
+      <main>
+        <div className="leftSide">          
+          <BackButton />                 
         </div>
 
-        <div className="main">
-          <div className="leftSide">
-              <div className="backButton">
-                <div className="backImg">                  
-                  <FontAwesomeIcon icon={faArrowCircleLeft} />  
-                </div>
-                <div className="backCaption">
-                  BACK
-                </div>
-              </div>
-          </div>
+        <div className="card">
 
-          <div className="mainTab">
-
-            <div className="mainTop">
-              <div className="topLeft rowElements">
-                <CurrentWeather />
-              </div>
-      
-              <div className="topMid rowElements">
-              </div>
-      
-              <div className="topRight rowElements">
-                <div className="mainLocation">
-                  <div className="locationCaption">FRANCE</div> 
-                  <div className="slidebar"></div>
-                </div>
-              </div>
+          <div className="card_title">
+            <div className="card_title_Left rowElements">
+              <CurrentWeather />
             </div>
-      
-            <div className="mainBottom">
-              
-              <div className="twitter rowElements">
-                <div className="twitterTitle">
-                  <div className="twitterLogo rowElements">
-                    <img src={twitterIcon} alt="logo" />
-                  </div>
-                  <div className="titleCaption rowElements">
-                    Twitter Feed
-                  </div>
-                  <div className="twitterLocation rowElements">
-                    #France
-                  </div>
-                </div>
-      
-                <div className="twitterPosts">      
-                  <TwitterFeed props="#France"/>
-                </div>
-              </div>
-      
-              <div className="futureWeather rowElements">
-                <FutureWeather />
-              </div>      
+    
+            <div className="card_title_Mid rowElements">
             </div>
-              
+    
+            <div className="card_title_Right rowElements">
+              <City name="FRANCE"/>
+            </div>
           </div>
-
-          <div className="rightSide">
+    
+          <div className="card_detail">            
+            <TwitterFeed />    
+            <FutureWeather />    
           </div>
+            
         </div>
 
-        <div className="footer"></div>  
-      </div>
-
+        <div className="rightSide">
+        </div>
+      </main>
     </div>
   );
 }

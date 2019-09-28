@@ -10,20 +10,17 @@ class CurrentWeather extends Component{
         <div className="mainTemp">12°</div>
         <div className="mainCondition">CLOUDY</div>
 
-        <div className="conditions">
-          <div className="mainHum rowElements">
-              <div className="conditionCaption">HUMIDITY</div> 
-              <div className="conditionValue">64%</div>
-          </div>
+        <ul className="conditions">
+          <li className="mainHum rowElements">
+            <h1>humidity</h1> 
+            <p>64%</p>
+          </li>
 
-          <div className="divider rowElements">
-          </div>
-
-          <div className="mainWind rowElements">
-            <div className="conditionCaption">WIND</div>
-            <div className="conditionValue">12 k/M</div> 
-          </div>
-        </div>
+          <li className="mainWind rowElements">
+            <h1>wind</h1>
+            <p>12 k/M</p> 
+          </li>
+        </ul>
       </React.Fragment>  
     )
   }

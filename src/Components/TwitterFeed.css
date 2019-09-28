@@ -1,16 +1,47 @@
+.twitter {
+  letter-spacing: 0.02em;
+  width: 220px;
+}
+
+.twitterTitle {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.twitterLogo img {
+  width: 24px;
+}
+
+.twitterTitle h1 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.twitterLocation {
+  font-size: 8px; 
+}
+
+.twitter li {
+  font-size: 8px; 
+  border-right: 1px solid #ddd;
+}
+
+.twitterPosts {
+  padding: 10px;
+}
+
 .twitterPost {
   padding:10px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  vertical-align: middle;
+  width: 160px;
 }
 
-.twitterPostContent {
-  width: 150px;
-}
-
-.twitterPostIcon img {
+li img {
   width: 32px;
   padding: 0 5px 0;
 }

@@ -1,4 +1,12 @@
 
+.futureWeather {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .next1Day {
   padding: 10px;
   width: 50px;
@@ -26,4 +34,9 @@ i {
 
 .rowElements {
   display: inline-block;
+}
+
+.svg-inline--fa.fa-w-16, .svg-inline--fa.fa-w-18, .svg-inline--fa.fa-w-20{
+  width: 3.125em;
+  height: 5em;
 }
