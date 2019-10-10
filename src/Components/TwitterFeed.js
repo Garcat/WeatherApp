@@ -9,9 +9,9 @@ class TwitterFeed extends Component{
     return(
         <div className="twitter rowElements">
           <div className="twitterTitle">
-            <div className="twitterLogo rowElements">
-              <img src={twitterIcon} alt="logo" />
-            </div>
+            <p className="twitterLogo rowElements">
+              <img src={twitterIcon} alt="twitter logo" />
+            </p>
             <h1>
               Twitter Feed <small>#France</small>
             </h1>
@@ -19,14 +19,14 @@ class TwitterFeed extends Component{
 
           <ul>
             <li className="twitterPost">              
-              <img src={avatarIcon} alt="icon" className="twitterPostIcon" />              
+              <img src={avatarIcon} alt="avatar icon" className="twitterPostIcon" />              
               <p>
                 Don't forget your sunscreen tomorrow.
               </p>
             </li>
 
             <li className="twitterPost">
-              <img src={avatarIcon} alt="icon" className="twitterPostIcon" />              
+              <img src={avatarIcon} alt="avatar icon" className="twitterPostIcon" />              
               <p>
                 Amazing weather in Paris!
               </p>

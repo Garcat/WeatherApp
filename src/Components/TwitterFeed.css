@@ -4,15 +4,15 @@
 }
 
 .twitterTitle {
-  padding: 10px;
+  padding: 20px 20px 0;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  align-items: center;  
 }
 
 .twitterLogo img {
   width: 24px;
+  padding: 0 10px 0;
 }
 
 .twitterTitle h1 {
@@ -20,8 +20,8 @@
   font-weight: 600;
 }
 
-.twitterLocation {
-  font-size: 8px; 
+.twitter ul {
+  padding: 0 20px 0;
 }
 
 .twitter li {
@@ -29,21 +29,17 @@
   border-right: 1px solid #ddd;
 }
 
-.twitterPosts {
-  padding: 10px;
-}
-
 .twitterPost {
-  padding:10px 0;
+  padding: 10px 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 160px;
+  justify-content: flex-start;
+  width: 200px;
 }
 
-li img {
+.twitterPostIcon {
   width: 32px;
-  padding: 0 5px 0;
+  padding: 0 10px 0 0;
 }
 
 .rowElements {

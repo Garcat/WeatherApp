@@ -1,5 +1,5 @@
-.mainTemp {
-  padding: 0 0 0 20px;
+.currentTemp {  
+  margin: auto;
   font-size: 60px;
   font-weight: 400;
   height: min-content;
@@ -7,10 +7,12 @@
   color: #ffffff;
 }
 
-.mainCondition {
-  padding: 0 20px 5px;
+.currentCondition {
+  padding: 5px 20px;
+  margin: auto;
   font-size: 12px;    
   height: 100%;
+  text-transform: uppercase;
 }
 
 .conditions {
@@ -36,7 +38,7 @@
   border-right: 1px solid;
 }
 
-.mainHum, .mainWind {
+.currentHumidity, .currentWind {
   padding: 10px 6px;  
   width: 45%;
 }

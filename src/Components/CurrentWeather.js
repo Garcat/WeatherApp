@@ -3,22 +3,28 @@ import './CurrentWeather.css';
 
 class CurrentWeather extends Component{  
 
-  render(){
-    //let defaultValue = this.props.defaultValue || 'Sydney';
+  render(){    
+    const { condition: 
+              {text},
+            humidity,
+            temp_c,
+            wind_kph              
+          } = this.props          
+
     return(
       <React.Fragment>
-        <div className="mainTemp">12°</div>
-        <div className="mainCondition">CLOUDY</div>
+        <div className="currentTemp">{temp_c}°</div>
+        <div className="currentCondition">{text}</div>
 
         <ul className="conditions">
-          <li className="mainHum rowElements">
+          <li className="currentHumidity rowElements">
             <h1>humidity</h1> 
-            <p>64%</p>
+            <p>{humidity}%</p>
           </li>
 
-          <li className="mainWind rowElements">
+          <li className="currentWind rowElements">
             <h1>wind</h1>
-            <p>12 k/M</p> 
+            <p>{wind_kph}km/h</p> 
           </li>
         </ul>
       </React.Fragment>  

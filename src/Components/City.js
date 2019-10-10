@@ -7,7 +7,7 @@ class City extends Component{
     let defaultValue = this.props.name || 'FRANCE';
     return(    
       <div className="mainLocation">
-        <div className="locationCaption">{defaultValue}</div> 
+        <div className="locationLabel">{defaultValue}</div> 
         <div className="slidebar"></div>
       </div>
     )
